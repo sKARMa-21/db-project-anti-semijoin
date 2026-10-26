@@ -1,0 +1,114 @@
+2026-09-06 00:29:18.111 IST [3706] LOG:  starting PostgreSQL 18.6 on aarch64-apple-darwin24.6.0, compiled by Apple clang version 17.0.0 (clang-1700.0.13.5), 64-bit
+2026-09-06 00:29:18.113 IST [3706] LOG:  listening on IPv6 address "::1", port 5432
+2026-09-06 00:29:18.113 IST [3706] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-09-06 00:29:18.113 IST [3706] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-09-06 00:29:18.119 IST [3712] LOG:  database system was shut down at 2026-09-05 23:48:05 IST
+2026-09-06 00:29:18.122 IST [3706] LOG:  database system is ready to accept connections
+2026-09-06 00:29:42.177 IST [3706] LOG:  received fast shutdown request
+2026-09-06 00:29:42.177 IST [3706] LOG:  aborting any active transactions
+2026-09-06 00:29:42.178 IST [3706] LOG:  background worker "logical replication launcher" (PID 3715) exited with exit code 1
+2026-09-06 00:29:42.178 IST [3710] LOG:  shutting down
+2026-09-06 00:29:42.179 IST [3710] LOG:  checkpoint starting: shutdown immediate
+2026-09-06 00:29:42.181 IST [3710] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.002 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1711D80, redo lsn=0/1711D80
+2026-09-06 00:29:42.184 IST [3706] LOG:  database system is shut down
+2026-09-06 00:31:58.030 IST [3734] LOG:  starting PostgreSQL 18.6 on aarch64-apple-darwin24.6.0, compiled by Apple clang version 17.0.0 (clang-1700.0.13.5), 64-bit
+2026-09-06 00:31:58.032 IST [3734] LOG:  listening on IPv6 address "::1", port 5432
+2026-09-06 00:31:58.032 IST [3734] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-09-06 00:31:58.032 IST [3734] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-09-06 00:31:58.035 IST [3740] LOG:  database system was shut down at 2026-09-06 00:29:42 IST
+2026-09-06 00:31:58.037 IST [3734] LOG:  database system is ready to accept connections
+2026-09-06 00:34:28.251 IST [3756] FATAL:  database "skarmarinchen" does not exist
+2026-09-06 00:34:59.562 IST [3760] FATAL:  lock file "postmaster.pid" already exists
+2026-09-06 00:34:59.562 IST [3760] HINT:  Is another postmaster (PID 3734) running in data directory "/Users/skarmarinchen/postgresql/install/data"?
+2026-09-06 00:35:04.348 IST [3762] FATAL:  database "skarmarinchen" does not exist
+2026-09-06 00:36:58.031 IST [3738] LOG:  checkpoint starting: time
+2026-09-06 00:37:02.399 IST [3738] LOG:  checkpoint complete: wrote 43 buffers (0.3%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.363 s, sync=0.002 s, total=4.369 s; sync files=11, longest=0.001 s, average=0.001 s; distance=340 kB, estimate=340 kB; lsn=0/1766E50, redo lsn=0/1766DC0
+2026-09-06 00:41:58.399 IST [3738] LOG:  checkpoint starting: time
+2026-09-06 00:42:00.643 IST [3738] LOG:  checkpoint complete: wrote 22 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.240 s, sync=0.003 s, total=2.245 s; sync files=20, longest=0.001 s, average=0.001 s; distance=130 kB, estimate=319 kB; lsn=0/1787A18, redo lsn=0/1787988
+2026-09-06 00:42:37.923 IST [3783] ERROR:  syntax error at or near "*" at character 109
+2026-09-06 00:42:37.923 IST [3783] STATEMENT:  EXPLAIN (ANALYSE, BUFFERS) INSERT INTO charging_telemetry (session_id, kwh_drawn, voltage)SELECT g, (2.50 + * 0.05)::NUMERIC(6,2), 400 FROM generate_series(1, 15000) AS g;
+2026-09-06 01:12:45.949 IST [3738] LOG:  checkpoint starting: time
+2026-09-06 01:12:55.584 IST [3738] LOG:  checkpoint complete: wrote 95 buffers (0.6%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=9.631 s, sync=0.002 s, total=9.636 s; sync files=11, longest=0.001 s, average=0.001 s; distance=1150 kB, estimate=1150 kB; lsn=0/18A7288, redo lsn=0/18A71F8
+2026-09-06 01:50:49.808 IST [3783] ERROR:  column "session_i" does not exist at character 40
+2026-09-06 01:50:49.808 IST [3783] HINT:  Perhaps you meant to reference the column "charging_telemetry.session_id".
+2026-09-06 01:50:49.808 IST [3783] STATEMENT:  SELECT * FROM charging_telemetry WHERE session_i;
+2026-09-06 01:50:49.809 IST [3783] ERROR:  trailing junk after numeric literal at or near "5D" at character 1
+2026-09-06 01:50:49.809 IST [3783] STATEMENT:  5D;
+2026-09-06 01:50:49.809 IST [3783] ERROR:  trailing junk after numeric literal at or near "5D" at character 1
+2026-09-06 01:50:49.809 IST [3783] STATEMENT:  5D;
+2026-09-06 01:50:49.809 IST [3783] ERROR:  syntax error at or near "5" at character 1
+2026-09-06 01:50:49.809 IST [3783] STATEMENT:  5;
+2026-09-06 01:50:49.809 IST [3783] ERROR:  trailing junk after numeric literal at or near "5D" at character 1
+2026-09-06 01:50:49.809 IST [3783] STATEMENT:  5D;
+2026-09-06 01:50:49.809 IST [3783] ERROR:  trailing junk after numeric literal at or near "5DDd" at character 1
+2026-09-06 01:50:49.809 IST [3783] STATEMENT:  5DDd = 0845;
+2026-09-06 01:52:45.621 IST [3738] LOG:  checkpoint starting: time
+2026-09-06 01:52:45.930 IST [3738] LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.305 s, sync=0.001 s, total=0.310 s; sync files=1, longest=0.001 s, average=0.001 s; distance=24 kB, estimate=1037 kB; lsn=0/18AD2E8, redo lsn=0/18AD290
+2026-09-06 01:56:42.040 IST [3783] ERROR:  syntax error at or near "›" at character 1
+2026-09-06 01:56:42.040 IST [3783] STATEMENT:  ›
+	TRUNCATE TABLE charging_telemetry;
+2026-09-06 01:56:51.548 IST [3783] ERROR:  syntax error at or near "›" at character 1
+2026-09-06 01:56:51.548 IST [3783] STATEMENT:  ›
+	TRUNCATE TABLE charging_telemetry;
+2026-09-06 01:57:45.933 IST [3738] LOG:  checkpoint starting: time
+2026-09-06 01:58:01.110 IST [3738] LOG:  checkpoint complete: wrote 150 buffers (0.9%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=15.172 s, sync=0.003 s, total=15.178 s; sync files=25, longest=0.001 s, average=0.001 s; distance=2481 kB, estimate=2481 kB; lsn=0/1B19998, redo lsn=0/1B19908
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "prereq" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table prereq;
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "time_slot" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table time_slot;
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "advisor" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table advisor;
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "takes" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table takes;
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "student" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table student;
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "teaches" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table teaches;
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "section" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table section;
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "instructor" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table instructor;
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "course" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table course;
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "department" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table department;
+2026-09-06 02:02:39.284 IST [4114] ERROR:  table "classroom" does not exist
+2026-09-06 02:02:39.284 IST [4114] STATEMENT:  drop table classroom;
+2026-09-06 02:02:45.094 IST [3738] LOG:  checkpoint starting: time
+2026-09-06 02:03:10.123 IST [3738] LOG:  checkpoint complete: wrote 247 buffers (1.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=25.020 s, sync=0.005 s, total=25.029 s; sync files=92, longest=0.001 s, average=0.001 s; distance=3067 kB, estimate=3067 kB; lsn=0/29C1510, redo lsn=0/1E18788
+2026-09-06 02:06:23.156 IST [3783] ERROR:  syntax error at or near "psql" at character 1
+2026-09-06 02:06:23.156 IST [3783] STATEMENT:  psql -d postgres -f ~/Downloads/DDL+drop.sql
+	psql -d postgres -f ~/Downloads/largeRelationsInsertFile.sql
+	EXPLAIN
+	SELECT *
+	FROM student
+	WHERE tot_cred > 
+	EXPLAIN SELECT * FROM student WHERE tot_cred > 10;
+2026-09-06 02:07:45.124 IST [3738] LOG:  checkpoint starting: time
+2026-09-06 02:07:48.070 IST [3783] ERROR:  syntax error at or near "SELECT" at character 57
+2026-09-06 02:07:48.070 IST [3783] STATEMENT:  EXPLAIN
+	SELECT *
+	FROM student
+	WHERE tot_cred > 
+	EXPLAIN SELECT * FROM student WHERE tot_cred > 10;
+2026-09-06 02:08:03.926 IST [3783] ERROR:  syntax error at or near "SELECT" at character 57
+2026-09-06 02:08:03.926 IST [3783] STATEMENT:  EXPLAIN
+	SELECT *
+	FROM student
+	WHERE tot_cred > 
+	EXPLAIN SELECT * FROM student WHERE tot_cred > 10;
+2026-09-06 02:08:45.743 IST [3738] LOG:  checkpoint complete: wrote 598 buffers (3.6%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=60.611 s, sync=0.002 s, total=60.619 s; sync files=68, longest=0.001 s, average=0.001 s; distance=12212 kB, estimate=12212 kB; lsn=0/2A078F8, redo lsn=0/2A05800
+2026-09-06 02:09:59.457 IST [3783] ERROR:  relation "idx_student_dept" already exists
+2026-09-06 02:09:59.457 IST [3783] STATEMENT:  CREATE INDEX idx_student_dept ON student(dept_name);
+2026-09-06 02:12:45.745 IST [3738] LOG:  checkpoint starting: time
+2026-09-06 02:12:47.484 IST [3738] LOG:  checkpoint complete: wrote 17 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.733 s, sync=0.002 s, total=1.739 s; sync files=19, longest=0.001 s, average=0.001 s; distance=149 kB, estimate=11005 kB; lsn=0/2A2AD40, redo lsn=0/2A2ACE8
+2026-09-06 02:17:45.475 IST [3738] LOG:  checkpoint starting: time
+2026-09-06 02:17:49.555 IST [3738] LOG:  checkpoint complete: wrote 40 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.072 s, sync=0.003 s, total=4.080 s; sync files=33, longest=0.001 s, average=0.001 s; distance=2987 kB, estimate=10203 kB; lsn=0/2D15B28, redo lsn=0/2D15AD0
+2026-09-06 02:22:45.556 IST [3738] LOG:  checkpoint starting: time
+2026-09-06 02:23:32.888 IST [3738] LOG:  checkpoint complete: wrote 468 buffers (2.9%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 1 recycled; write=47.327 s, sync=0.002 s, total=47.333 s; sync files=34, longest=0.001 s, average=0.001 s; distance=11437 kB, estimate=11437 kB; lsn=0/3841298, redo lsn=0/3841208
+2026-09-06 12:24:12.098 IST [3734] LOG:  received smart shutdown request
+2026-09-06 12:24:12.100 IST [3734] LOG:  background worker "logical replication launcher" (PID 3743) exited with exit code 1
+2026-09-06 12:24:12.100 IST [3738] LOG:  shutting down
+2026-09-06 12:24:12.100 IST [3738] LOG:  checkpoint starting: shutdown immediate
+2026-09-06 12:24:12.105 IST [3738] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.001 s, total=0.006 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=10294 kB; lsn=0/3841348, redo lsn=0/3841348
+2026-09-06 12:24:12.115 IST [3734] LOG:  database system is shut down

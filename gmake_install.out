@@ -1,0 +1,866 @@
+/Library/Developer/CommandLineTools/usr/bin/make -C ./src/backend generated-headers
+/Library/Developer/CommandLineTools/usr/bin/make -C ../include/catalog generated-headers
+make[2]: Nothing to be done for `generated-headers'.
+/Library/Developer/CommandLineTools/usr/bin/make -C nodes generated-header-symlinks
+make[2]: Nothing to be done for `generated-header-symlinks'.
+/Library/Developer/CommandLineTools/usr/bin/make -C utils generated-header-symlinks
+/Library/Developer/CommandLineTools/usr/bin/make -C adt jsonpath_gram.h
+make[3]: `jsonpath_gram.h' is up to date.
+/Library/Developer/CommandLineTools/usr/bin/make -C src install
+/Library/Developer/CommandLineTools/usr/bin/make -C common install
+/bin/sh ../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 644  libpgcommon.a '/Users/skarmarinchen/postgresql/install/lib/libpgcommon.a'
+/usr/bin/install -c -m 644  libpgcommon_shlib.a '/Users/skarmarinchen/postgresql/install/lib/libpgcommon_shlib.a'
+/Library/Developer/CommandLineTools/usr/bin/make -C port install
+/bin/sh ../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 644  libpgport.a '/Users/skarmarinchen/postgresql/install/lib/libpgport.a'
+/usr/bin/install -c -m 644  libpgport_shlib.a '/Users/skarmarinchen/postgresql/install/lib/libpgport_shlib.a'
+/Library/Developer/CommandLineTools/usr/bin/make -C timezone install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../src/port all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../src/common all
+make[3]: Nothing to be done for `all'.
+/bin/sh ../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/share'
+./zic -d '/Users/skarmarinchen/postgresql/install/share/timezone'  ./data/tzdata.zi
+/Library/Developer/CommandLineTools/usr/bin/make -C tznames install
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/share/timezonesets'
+/usr/bin/install -c -m 644 ./Africa.txt ./America.txt ./Antarctica.txt ./Asia.txt ./Atlantic.txt ./Australia.txt ./Etc.txt ./Europe.txt ./Indian.txt ./Pacific.txt '/Users/skarmarinchen/postgresql/install/share/timezonesets'
+/usr/bin/install -c -m 644 ./Default ./Australia ./India '/Users/skarmarinchen/postgresql/install/share/timezonesets'
+/Library/Developer/CommandLineTools/usr/bin/make -C backend install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../src/port all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../src/common all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../include/catalog generated-headers
+make[3]: Nothing to be done for `generated-headers'.
+/Library/Developer/CommandLineTools/usr/bin/make -C utils generated-header-symlinks
+/Library/Developer/CommandLineTools/usr/bin/make -C adt jsonpath_gram.h
+make[4]: `jsonpath_gram.h' is up to date.
+/Library/Developer/CommandLineTools/usr/bin/make -C access all
+/Library/Developer/CommandLineTools/usr/bin/make -C brin all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C gin all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C gist all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C hash all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C heap all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C index all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C nbtree all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C rmgrdesc all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C spgist all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C sequence all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C table all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C tablesample all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C transam all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C archive all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C backup all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C bootstrap all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C catalog all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C parser all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C commands all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C executor all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C foreign all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C lib all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C libpq all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C main all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C nodes all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C optimizer all
+/Library/Developer/CommandLineTools/usr/bin/make -C geqo all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C path all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C plan all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C prep all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C util all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C partitioning all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C port all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C postmaster all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C regex all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C replication all
+/Library/Developer/CommandLineTools/usr/bin/make -C logical all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C rewrite all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C statistics all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C storage all
+/Library/Developer/CommandLineTools/usr/bin/make -C aio all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C buffer all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C file all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C freespace all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ipc all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C large_object all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C lmgr all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C page all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C smgr all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C sync all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C tcop all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C tsearch all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C utils all
+/Library/Developer/CommandLineTools/usr/bin/make -C activity all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C adt all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C cache all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C error all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C fmgr all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C hash all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C init all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C mb all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C misc all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C mmgr all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C resowner all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C sort all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C time all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C adt jsonpath_gram.h
+make[4]: `jsonpath_gram.h' is up to date.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../src/timezone all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C jit all
+make[3]: Nothing to be done for `all'.
+/bin/sh ../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin' '/Users/skarmarinchen/postgresql/install/share'
+/usr/bin/install -c  postgres '/Users/skarmarinchen/postgresql/install/bin/postgres'
+/Library/Developer/CommandLineTools/usr/bin/make -C access install
+/Library/Developer/CommandLineTools/usr/bin/make -C brin install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C common install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C gin install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C gist install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C hash install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C heap install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C index install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C nbtree install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C rmgrdesc install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C spgist install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C sequence install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C table install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C tablesample install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C transam install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C archive install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C backup install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C bootstrap install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C catalog install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C parser install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C commands install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C executor install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C foreign install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C lib install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C libpq install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C main install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C nodes install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C optimizer install
+/Library/Developer/CommandLineTools/usr/bin/make -C geqo install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C path install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C plan install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C prep install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C util install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C partitioning install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C port install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C postmaster install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C regex install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C replication install
+/Library/Developer/CommandLineTools/usr/bin/make -C logical install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C rewrite install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C statistics install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C storage install
+/Library/Developer/CommandLineTools/usr/bin/make -C aio install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C buffer install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C file install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C freespace install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ipc install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C large_object install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C lmgr install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C page install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C smgr install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C sync install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C tcop install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C tsearch install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C utils install
+/Library/Developer/CommandLineTools/usr/bin/make -C activity install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C adt install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C cache install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C error install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C fmgr install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C hash install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C init install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C mb install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C misc install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C mmgr install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C resowner install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C sort install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C time install
+make[4]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../src/timezone install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/share'
+./zic -d '/Users/skarmarinchen/postgresql/install/share/timezone'  ./data/tzdata.zi
+/Library/Developer/CommandLineTools/usr/bin/make -C tznames install
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/share/timezonesets'
+/usr/bin/install -c -m 644 ./Africa.txt ./America.txt ./Antarctica.txt ./Asia.txt ./Atlantic.txt ./Australia.txt ./Etc.txt ./Europe.txt ./Indian.txt ./Pacific.txt '/Users/skarmarinchen/postgresql/install/share/timezonesets'
+/usr/bin/install -c -m 644 ./Default ./Australia ./India '/Users/skarmarinchen/postgresql/install/share/timezonesets'
+/Library/Developer/CommandLineTools/usr/bin/make -C jit install
+make[3]: Nothing to be done for `install'.
+/Library/Developer/CommandLineTools/usr/bin/make -C catalog install-data
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/share'
+/usr/bin/install -c -m 644 ./system_functions.sql '/Users/skarmarinchen/postgresql/install/share/system_functions.sql'
+/usr/bin/install -c -m 644 ./system_views.sql '/Users/skarmarinchen/postgresql/install/share/system_views.sql'
+/usr/bin/install -c -m 644 ./information_schema.sql '/Users/skarmarinchen/postgresql/install/share/information_schema.sql'
+/usr/bin/install -c -m 644 ./sql_features.txt '/Users/skarmarinchen/postgresql/install/share/sql_features.txt'
+/Library/Developer/CommandLineTools/usr/bin/make -C tsearch install-data
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/share' '/Users/skarmarinchen/postgresql/install/share/tsearch_data'
+/usr/bin/install -c -m 644 ./dicts/synonym_sample.syn ./dicts/thesaurus_sample.ths ./dicts/hunspell_sample.affix ./dicts/ispell_sample.affix ./dicts/ispell_sample.dict ./dicts/hunspell_sample_long.affix ./dicts/hunspell_sample_long.dict ./dicts/hunspell_sample_num.affix ./dicts/hunspell_sample_num.dict '/Users/skarmarinchen/postgresql/install/share/tsearch_data/'
+/Library/Developer/CommandLineTools/usr/bin/make -C utils install-data
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/share'
+/usr/bin/install -c -m 644 ./errcodes.txt '/Users/skarmarinchen/postgresql/install/share/errcodes.txt'
+/usr/bin/install -c -m 644 ./libpq/pg_hba.conf.sample '/Users/skarmarinchen/postgresql/install/share/pg_hba.conf.sample'
+/usr/bin/install -c -m 644 ./libpq/pg_ident.conf.sample '/Users/skarmarinchen/postgresql/install/share/pg_ident.conf.sample'
+/usr/bin/install -c -m 644 ./utils/misc/postgresql.conf.sample '/Users/skarmarinchen/postgresql/install/share/postgresql.conf.sample'
+/Library/Developer/CommandLineTools/usr/bin/make -C backend/utils/mb/conversion_procs install
+/Library/Developer/CommandLineTools/usr/bin/make -C cyrillic_and_mic install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  cyrillic_and_mic.dylib '/Users/skarmarinchen/postgresql/install/lib/cyrillic_and_mic.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C euc_cn_and_mic install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  euc_cn_and_mic.dylib '/Users/skarmarinchen/postgresql/install/lib/euc_cn_and_mic.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C euc_jp_and_sjis install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  euc_jp_and_sjis.dylib '/Users/skarmarinchen/postgresql/install/lib/euc_jp_and_sjis.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C euc_kr_and_mic install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  euc_kr_and_mic.dylib '/Users/skarmarinchen/postgresql/install/lib/euc_kr_and_mic.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C euc_tw_and_big5 install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  euc_tw_and_big5.dylib '/Users/skarmarinchen/postgresql/install/lib/euc_tw_and_big5.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C latin2_and_win1250 install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  latin2_and_win1250.dylib '/Users/skarmarinchen/postgresql/install/lib/latin2_and_win1250.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C latin_and_mic install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  latin_and_mic.dylib '/Users/skarmarinchen/postgresql/install/lib/latin_and_mic.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_big5 install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_big5.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_big5.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_cyrillic install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_cyrillic.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_cyrillic.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_euc_cn install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_euc_cn.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_euc_cn.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_euc_jp install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_euc_jp.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_euc_jp.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_euc_kr install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_euc_kr.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_euc_kr.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_euc_tw install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_euc_tw.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_euc_tw.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_gb18030 install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_gb18030.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_gb18030.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_gbk install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_gbk.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_gbk.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_iso8859 install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_iso8859.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_iso8859.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_iso8859_1 install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_iso8859_1.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_iso8859_1.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_johab install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_johab.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_johab.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_sjis install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_sjis.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_sjis.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_win install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_win.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_win.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_uhc install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_uhc.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_uhc.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_euc2004 install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_euc2004.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_euc2004.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C utf8_and_sjis2004 install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  utf8_and_sjis2004.dylib '/Users/skarmarinchen/postgresql/install/lib/utf8_and_sjis2004.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C euc2004_sjis2004 install
+/bin/sh ../../../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  euc2004_sjis2004.dylib '/Users/skarmarinchen/postgresql/install/lib/euc2004_sjis2004.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C backend/snowball install
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/share' '/Users/skarmarinchen/postgresql/install/share/tsearch_data'
+/usr/bin/install -c -m 755  dict_snowball.dylib '/Users/skarmarinchen/postgresql/install/lib/dict_snowball.dylib'
+/usr/bin/install -c -m 644 snowball_create.sql '/Users/skarmarinchen/postgresql/install/share'
+/usr/bin/install -c -m 644 ./stopwords/danish.stop ./stopwords/dutch.stop ./stopwords/english.stop ./stopwords/finnish.stop ./stopwords/french.stop ./stopwords/german.stop ./stopwords/hungarian.stop ./stopwords/italian.stop ./stopwords/nepali.stop ./stopwords/norwegian.stop ./stopwords/portuguese.stop ./stopwords/russian.stop ./stopwords/spanish.stop ./stopwords/swedish.stop ./stopwords/turkish.stop '/Users/skarmarinchen/postgresql/install/share/tsearch_data'
+/Library/Developer/CommandLineTools/usr/bin/make -C include install
+/bin/sh ../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/include/libpq' '/Users/skarmarinchen/postgresql/install/include/internal/libpq'
+/bin/sh ../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/include/server'/access '/Users/skarmarinchen/postgresql/install/include/server'/archive '/Users/skarmarinchen/postgresql/install/include/server'/bootstrap '/Users/skarmarinchen/postgresql/install/include/server'/catalog '/Users/skarmarinchen/postgresql/install/include/server'/commands '/Users/skarmarinchen/postgresql/install/include/server'/common '/Users/skarmarinchen/postgresql/install/include/server'/datatype '/Users/skarmarinchen/postgresql/install/include/server'/executor '/Users/skarmarinchen/postgresql/install/include/server'/fe_utils '/Users/skarmarinchen/postgresql/install/include/server'/foreign '/Users/skarmarinchen/postgresql/install/include/server'/jit '/Users/skarmarinchen/postgresql/install/include/server'/lib '/Users/skarmarinchen/postgresql/install/include/server'/libpq '/Users/skarmarinchen/postgresql/install/include/server'/mb '/Users/skarmarinchen/postgresql/install/include/server'/nodes '/Users/skarmarinchen/postgresql/install/include/server'/optimizer '/Users/skarmarinchen/postgresql/install/include/server'/parser '/Users/skarmarinchen/postgresql/install/include/server'/partitioning '/Users/skarmarinchen/postgresql/install/include/server'/postmaster '/Users/skarmarinchen/postgresql/install/include/server'/regex '/Users/skarmarinchen/postgresql/install/include/server'/replication '/Users/skarmarinchen/postgresql/install/include/server'/rewrite '/Users/skarmarinchen/postgresql/install/include/server'/statistics '/Users/skarmarinchen/postgresql/install/include/server'/storage '/Users/skarmarinchen/postgresql/install/include/server'/tcop '/Users/skarmarinchen/postgresql/install/include/server'/snowball '/Users/skarmarinchen/postgresql/install/include/server'/snowball/libstemmer '/Users/skarmarinchen/postgresql/install/include/server'/tsearch '/Users/skarmarinchen/postgresql/install/include/server'/tsearch/dicts '/Users/skarmarinchen/postgresql/install/include/server'/utils '/Users/skarmarinchen/postgresql/install/include/server'/port '/Users/skarmarinchen/postgresql/install/include/server'/port/atomics '/Users/skarmarinchen/postgresql/install/include/server'/port/win32 '/Users/skarmarinchen/postgresql/install/include/server'/port/win32_msvc '/Users/skarmarinchen/postgresql/install/include/server'/port/win32_msvc/sys '/Users/skarmarinchen/postgresql/install/include/server'/port/win32/arpa '/Users/skarmarinchen/postgresql/install/include/server'/port/win32/netinet '/Users/skarmarinchen/postgresql/install/include/server'/port/win32/sys '/Users/skarmarinchen/postgresql/install/include/server'/portability
+/usr/bin/install -c -m 644 ./postgres_ext.h   '/Users/skarmarinchen/postgresql/install/include'
+/usr/bin/install -c -m 644 ./libpq/libpq-fs.h '/Users/skarmarinchen/postgresql/install/include/libpq'
+/usr/bin/install -c -m 644 pg_config.h     '/Users/skarmarinchen/postgresql/install/include'
+/usr/bin/install -c -m 644 pg_config_os.h  '/Users/skarmarinchen/postgresql/install/include'
+/usr/bin/install -c -m 644 ./pg_config_manual.h '/Users/skarmarinchen/postgresql/install/include'
+/usr/bin/install -c -m 644 ./c.h            '/Users/skarmarinchen/postgresql/install/include/internal'
+/usr/bin/install -c -m 644 ./port.h         '/Users/skarmarinchen/postgresql/install/include/internal'
+/usr/bin/install -c -m 644 ./postgres_fe.h  '/Users/skarmarinchen/postgresql/install/include/internal'
+/usr/bin/install -c -m 644 ./libpq/pqcomm.h '/Users/skarmarinchen/postgresql/install/include/internal/libpq'
+/usr/bin/install -c -m 644 ./libpq/protocol.h '/Users/skarmarinchen/postgresql/install/include/internal/libpq'
+/usr/bin/install -c -m 644 pg_config.h     '/Users/skarmarinchen/postgresql/install/include/server'
+/usr/bin/install -c -m 644 pg_config_os.h  '/Users/skarmarinchen/postgresql/install/include/server'
+/usr/bin/install -c -m 644 nodes/nodetags.h '/Users/skarmarinchen/postgresql/install/include/server/nodes'
+/usr/bin/install -c -m 644 utils/errcodes.h '/Users/skarmarinchen/postgresql/install/include/server/utils'
+/usr/bin/install -c -m 644 utils/fmgroids.h '/Users/skarmarinchen/postgresql/install/include/server/utils'
+/usr/bin/install -c -m 644 utils/fmgrprotos.h '/Users/skarmarinchen/postgresql/install/include/server/utils'
+/usr/bin/install -c -m 644 ./*.h '/Users/skarmarinchen/postgresql/install/include/server'
+for dir in access archive bootstrap catalog commands common datatype executor fe_utils foreign jit lib libpq mb nodes optimizer parser partitioning postmaster regex replication rewrite statistics storage tcop snowball snowball/libstemmer tsearch tsearch/dicts utils port port/atomics port/win32 port/win32_msvc port/win32_msvc/sys port/win32/arpa port/win32/netinet port/win32/sys portability; do \
+	  /usr/bin/install -c -m 644 ./$dir/*.h '/Users/skarmarinchen/postgresql/install/include/server'/$dir || exit; \
+	done
+/Library/Developer/CommandLineTools/usr/bin/make -C catalog install
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/share' '/Users/skarmarinchen/postgresql/install/include/server'
+/usr/bin/install -c -m 644 postgres.bki '/Users/skarmarinchen/postgresql/install/share/postgres.bki'
+/usr/bin/install -c -m 644 system_constraints.sql '/Users/skarmarinchen/postgresql/install/share/system_constraints.sql'
+/Library/Developer/CommandLineTools/usr/bin/make -C interfaces install
+/Library/Developer/CommandLineTools/usr/bin/make -C libpq install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib' '/Users/skarmarinchen/postgresql/install/lib/pkgconfig' 
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/include' '/Users/skarmarinchen/postgresql/install/include/internal' '/Users/skarmarinchen/postgresql/install/share'
+/usr/bin/install -c -m 755  libpq.5.dylib '/Users/skarmarinchen/postgresql/install/lib/libpq.5.dylib'
+cd '/Users/skarmarinchen/postgresql/install/lib' && \
+	rm -f libpq.dylib && \
+	ln -s libpq.5.dylib libpq.dylib
+/usr/bin/install -c -m 644  libpq.a '/Users/skarmarinchen/postgresql/install/lib/libpq.a'
+/usr/bin/install -c -m 644 libpq.pc '/Users/skarmarinchen/postgresql/install/lib/pkgconfig/libpq.pc'
+/usr/bin/install -c -m 644 ./libpq-fe.h '/Users/skarmarinchen/postgresql/install/include'
+/usr/bin/install -c -m 644 ./libpq-events.h '/Users/skarmarinchen/postgresql/install/include'
+/usr/bin/install -c -m 644 ./libpq-int.h '/Users/skarmarinchen/postgresql/install/include/internal'
+/usr/bin/install -c -m 644 ./fe-auth-sasl.h '/Users/skarmarinchen/postgresql/install/include/internal'
+/usr/bin/install -c -m 644 ./pqexpbuffer.h '/Users/skarmarinchen/postgresql/install/include/internal'
+/usr/bin/install -c -m 644 ./pg_service.conf.sample '/Users/skarmarinchen/postgresql/install/share/pg_service.conf.sample'
+/Library/Developer/CommandLineTools/usr/bin/make -C ecpg install
+/Library/Developer/CommandLineTools/usr/bin/make -C include install
+/bin/sh ../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/include' '/Users/skarmarinchen/postgresql/install/include/informix/esql'
+/usr/bin/install -c -m 644 ./ecpgerrno.h ./ecpglib.h ./ecpgtype.h ./sqlca.h ./sql3types.h ./ecpg_informix.h ./pgtypes_error.h ./pgtypes_numeric.h ./pgtypes_timestamp.h ./pgtypes_date.h ./pgtypes_interval.h ./pgtypes.h ./sqlda.h ./sqlda-compat.h ./sqlda-native.h '/Users/skarmarinchen/postgresql/install/include/'
+/usr/bin/install -c -m 644 ./datetime.h ./decimal.h ./sqltypes.h '/Users/skarmarinchen/postgresql/install/include/informix/esql/'
+/usr/bin/install -c -m 644 ../../../../src/interfaces/ecpg/include/ecpg_config.h '/Users/skarmarinchen/postgresql/install/include'
+/Library/Developer/CommandLineTools/usr/bin/make -C pgtypeslib install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/common all
+make[5]: Nothing to be done for `all'.
+/bin/sh ../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib' '/Users/skarmarinchen/postgresql/install/lib/pkgconfig' 
+/usr/bin/install -c -m 755  libpgtypes.3.dylib '/Users/skarmarinchen/postgresql/install/lib/libpgtypes.3.dylib'
+cd '/Users/skarmarinchen/postgresql/install/lib' && \
+	rm -f libpgtypes.dylib && \
+	ln -s libpgtypes.3.dylib libpgtypes.dylib
+/usr/bin/install -c -m 644  libpgtypes.a '/Users/skarmarinchen/postgresql/install/lib/libpgtypes.a'
+/usr/bin/install -c -m 644 libpgtypes.pc '/Users/skarmarinchen/postgresql/install/lib/pkgconfig/libpgtypes.pc'
+/Library/Developer/CommandLineTools/usr/bin/make -C ecpglib install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[6]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[6]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/interfaces/ecpg/pgtypeslib all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/port all
+make[6]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/common all
+make[6]: Nothing to be done for `all'.
+/bin/sh ../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib' '/Users/skarmarinchen/postgresql/install/lib/pkgconfig' 
+/usr/bin/install -c -m 755  libecpg.6.dylib '/Users/skarmarinchen/postgresql/install/lib/libecpg.6.dylib'
+cd '/Users/skarmarinchen/postgresql/install/lib' && \
+	rm -f libecpg.dylib && \
+	ln -s libecpg.6.dylib libecpg.dylib
+/usr/bin/install -c -m 644  libecpg.a '/Users/skarmarinchen/postgresql/install/lib/libecpg.a'
+/usr/bin/install -c -m 644 libecpg.pc '/Users/skarmarinchen/postgresql/install/lib/pkgconfig/libecpg.pc'
+/Library/Developer/CommandLineTools/usr/bin/make -C compatlib install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/interfaces/ecpg/ecpglib all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[7]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[7]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/interfaces/ecpg/pgtypeslib all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/port all
+make[7]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/common all
+make[7]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/interfaces/ecpg/pgtypeslib all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/port all
+make[6]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/common all
+make[6]: Nothing to be done for `all'.
+/bin/sh ../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib' '/Users/skarmarinchen/postgresql/install/lib/pkgconfig' 
+/usr/bin/install -c -m 755  libecpg_compat.3.dylib '/Users/skarmarinchen/postgresql/install/lib/libecpg_compat.3.dylib'
+cd '/Users/skarmarinchen/postgresql/install/lib' && \
+	rm -f libecpg_compat.dylib && \
+	ln -s libecpg_compat.3.dylib libecpg_compat.dylib
+/usr/bin/install -c -m 644  libecpg_compat.a '/Users/skarmarinchen/postgresql/install/lib/libecpg_compat.a'
+/usr/bin/install -c -m 644 libecpg_compat.pc '/Users/skarmarinchen/postgresql/install/lib/pkgconfig/libecpg_compat.pc'
+/Library/Developer/CommandLineTools/usr/bin/make -C preproc install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/common all
+make[5]: Nothing to be done for `all'.
+/bin/sh ../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  ecpg '/Users/skarmarinchen/postgresql/install/bin'
+/Library/Developer/CommandLineTools/usr/bin/make -C backend/replication/libpqwalreceiver install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  libpqwalreceiver.dylib '/Users/skarmarinchen/postgresql/install/lib/libpqwalreceiver.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C backend/replication/pgoutput install
+/bin/sh ../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  pgoutput.dylib '/Users/skarmarinchen/postgresql/install/lib/pgoutput.dylib'
+/Library/Developer/CommandLineTools/usr/bin/make -C fe_utils install
+/bin/sh ../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 644  libpgfeutils.a '/Users/skarmarinchen/postgresql/install/lib/libpgfeutils.a'
+/Library/Developer/CommandLineTools/usr/bin/make -C bin install
+/Library/Developer/CommandLineTools/usr/bin/make -C initdb install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  initdb '/Users/skarmarinchen/postgresql/install/bin/initdb'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_amcheck install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_amcheck '/Users/skarmarinchen/postgresql/install/bin/pg_amcheck'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_archivecleanup install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_archivecleanup '/Users/skarmarinchen/postgresql/install/bin/pg_archivecleanup'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_basebackup install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_basebackup '/Users/skarmarinchen/postgresql/install/bin/pg_basebackup'
+/usr/bin/install -c  pg_createsubscriber '/Users/skarmarinchen/postgresql/install/bin/pg_createsubscriber'
+/usr/bin/install -c  pg_receivewal '/Users/skarmarinchen/postgresql/install/bin/pg_receivewal'
+/usr/bin/install -c  pg_recvlogical '/Users/skarmarinchen/postgresql/install/bin/pg_recvlogical'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_checksums install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_checksums '/Users/skarmarinchen/postgresql/install/bin/pg_checksums'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_combinebackup install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_combinebackup '/Users/skarmarinchen/postgresql/install/bin/pg_combinebackup'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_config install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c -m 755 pg_config '/Users/skarmarinchen/postgresql/install/bin/pg_config'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_controldata install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_controldata '/Users/skarmarinchen/postgresql/install/bin/pg_controldata'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_ctl install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_ctl '/Users/skarmarinchen/postgresql/install/bin/pg_ctl'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_dump install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_dump '/Users/skarmarinchen/postgresql/install/bin'/pg_dump
+/usr/bin/install -c  pg_restore '/Users/skarmarinchen/postgresql/install/bin'/pg_restore
+/usr/bin/install -c  pg_dumpall '/Users/skarmarinchen/postgresql/install/bin'/pg_dumpall
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_resetwal install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_resetwal '/Users/skarmarinchen/postgresql/install/bin/pg_resetwal'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_rewind install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_rewind '/Users/skarmarinchen/postgresql/install/bin/pg_rewind'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_test_fsync install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_test_fsync '/Users/skarmarinchen/postgresql/install/bin/pg_test_fsync'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_test_timing install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_test_timing '/Users/skarmarinchen/postgresql/install/bin/pg_test_timing'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_upgrade install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_upgrade '/Users/skarmarinchen/postgresql/install/bin/pg_upgrade'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_verifybackup install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_verifybackup '/Users/skarmarinchen/postgresql/install/bin/pg_verifybackup'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_waldump install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_waldump '/Users/skarmarinchen/postgresql/install/bin/pg_waldump'
+/Library/Developer/CommandLineTools/usr/bin/make -C pg_walsummary install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pg_walsummary '/Users/skarmarinchen/postgresql/install/bin/pg_walsummary'
+/Library/Developer/CommandLineTools/usr/bin/make -C pgbench install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  pgbench '/Users/skarmarinchen/postgresql/install/bin/pgbench'
+/Library/Developer/CommandLineTools/usr/bin/make -C psql install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin' '/Users/skarmarinchen/postgresql/install/share'
+/usr/bin/install -c  psql '/Users/skarmarinchen/postgresql/install/bin/psql'
+/usr/bin/install -c -m 644 ./psqlrc.sample '/Users/skarmarinchen/postgresql/install/share/psqlrc.sample'
+/Library/Developer/CommandLineTools/usr/bin/make -C scripts install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[5]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/fe_utils all
+make[4]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/bin'
+/usr/bin/install -c  createdb   '/Users/skarmarinchen/postgresql/install/bin'/createdb
+/usr/bin/install -c  dropdb     '/Users/skarmarinchen/postgresql/install/bin'/dropdb
+/usr/bin/install -c  createuser '/Users/skarmarinchen/postgresql/install/bin'/createuser
+/usr/bin/install -c  dropuser   '/Users/skarmarinchen/postgresql/install/bin'/dropuser
+/usr/bin/install -c  clusterdb  '/Users/skarmarinchen/postgresql/install/bin'/clusterdb
+/usr/bin/install -c  vacuumdb   '/Users/skarmarinchen/postgresql/install/bin'/vacuumdb
+/usr/bin/install -c  reindexdb  '/Users/skarmarinchen/postgresql/install/bin'/reindexdb
+/usr/bin/install -c  pg_isready '/Users/skarmarinchen/postgresql/install/bin'/pg_isready
+/Library/Developer/CommandLineTools/usr/bin/make -C pl install
+/Library/Developer/CommandLineTools/usr/bin/make -C plpgsql install
+/Library/Developer/CommandLineTools/usr/bin/make -C src install
+/bin/sh ../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib'
+/usr/bin/install -c -m 755  plpgsql.dylib '/Users/skarmarinchen/postgresql/install/lib/plpgsql.dylib'
+/bin/sh ../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/share/extension'
+/bin/sh ../../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/include/server'
+/usr/bin/install -c -m 644 ./plpgsql.control ./plpgsql--1.0.sql '/Users/skarmarinchen/postgresql/install/share/extension/'
+/usr/bin/install -c -m 644 './plpgsql.h' '/Users/skarmarinchen/postgresql/install/include/server'
+/Library/Developer/CommandLineTools/usr/bin/make -C makefiles install
+/bin/sh ../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/makefiles'
+/usr/bin/install -c -m 644 ./pgxs.mk '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/makefiles/'
+/Library/Developer/CommandLineTools/usr/bin/make -C test/regress install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[3]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/test/regress'
+/usr/bin/install -c  pg_regress '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/test/regress/pg_regress'
+/Library/Developer/CommandLineTools/usr/bin/make -C test/isolation install
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/interfaces/libpq all
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[4]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/port all
+make[3]: Nothing to be done for `all'.
+/Library/Developer/CommandLineTools/usr/bin/make -C ../../../src/common all
+make[3]: Nothing to be done for `all'.
+/bin/sh ../../../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/test/isolation'
+/usr/bin/install -c  pg_isolation_regress '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/test/isolation/pg_isolation_regress'
+/usr/bin/install -c  isolationtester '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/test/isolation/isolationtester'
+/Library/Developer/CommandLineTools/usr/bin/make -C test/perl install
+make[2]: Nothing to be done for `install'.
+/bin/sh ../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib/pgxs/src'
+/usr/bin/install -c -m 644 Makefile.global '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/Makefile.global'
+/usr/bin/install -c -m 644 Makefile.port '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/Makefile.port'
+/usr/bin/install -c -m 644 ./Makefile.shlib '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/Makefile.shlib'
+/usr/bin/install -c -m 644 ./nls-global.mk '/Users/skarmarinchen/postgresql/install/lib/pgxs/src/nls-global.mk'
+/Library/Developer/CommandLineTools/usr/bin/make -C config install
+/bin/sh ../config/install-sh -c -d '/Users/skarmarinchen/postgresql/install/lib/pgxs/config'
+/usr/bin/install -c -m 755 ./install-sh '/Users/skarmarinchen/postgresql/install/lib/pgxs/config/install-sh'
+/usr/bin/install -c -m 755 ./missing '/Users/skarmarinchen/postgresql/install/lib/pgxs/config/missing'
