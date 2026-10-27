@@ -698,7 +698,7 @@ static Node *makeRecursiveViewSelect(char *relname, List *aliases, Node *query);
 
 /* ordinary key words in alphabetical order */
 %token <keyword> ABORT_P ABSENT ABSOLUTE_P ACCESS ACTION ADD_P ADMIN AFTER
-	AGGREGATE ALL ALSO ALTER ALWAYS ANALYSE ANALYZE AND ANY ARRAY AS ASC
+	AGGREGATE ALL ALSO ALTER ALWAYS ANALYSE ANALYZE AND ANTI ANY ARRAY AS ASC
 	ASENSITIVE ASSERTION ASSIGNMENT ASYMMETRIC ATOMIC AT ATTACH ATTRIBUTE AUTHORIZATION
 
 	BACKWARD BEFORE BEGIN_P BETWEEN BIGINT BINARY BIT
@@ -768,7 +768,7 @@ static Node *makeRecursiveViewSelect(char *relname, List *aliases, Node *query);
 	ROUTINE ROUTINES ROW ROWS RULE
 
 	SAVEPOINT SCALAR SCHEMA SCHEMAS SCROLL SEARCH SECOND_P SECURITY SELECT
-	SEQUENCE SEQUENCES
+	SEMI SEQUENCE SEQUENCES
 	SERIALIZABLE SERVER SESSION SESSION_USER SET SETS SETOF SHARE SHOW
 	SIMILAR SIMPLE SKIP SMALLINT SNAPSHOT SOME SOURCE SQL_P STABLE STANDALONE_P
 	START STATEMENT STATISTICS STDIN STDOUT STORAGE STORED STRICT_P STRING_P STRIP_P
@@ -13887,10 +13887,12 @@ func_alias_clause:
 
 join_type:	FULL opt_outer							{ $$ = JOIN_FULL; }
 			| LEFT opt_outer						{ $$ = JOIN_LEFT; }
+			| LEFT SEMI								{ $$ = JOIN_SEMI; }
+			| LEFT ANTI								{ $$ = JOIN_ANTI; }
 			| RIGHT opt_outer						{ $$ = JOIN_RIGHT; }
+			| RIGHT SEMI							{ $$ = JOIN_RIGHT_SEMI; }
+			| RIGHT ANTI							{ $$ = JOIN_RIGHT_ANTI; }
 			| INNER_P								{ $$ = JOIN_INNER; }
-			| SEMI             						{ $$ = JOIN_SEMI; }
-            | ANTI            						{ $$ = JOIN_ANTI; }
 		;
 
 /* OUTER is just noise... */
@@ -17697,6 +17699,7 @@ unreserved_keyword:
 			| ALSO
 			| ALTER
 			| ALWAYS
+			| ANTI
 			| ASENSITIVE
 			| ASSERTION
 			| ASSIGNMENT
@@ -17939,6 +17942,7 @@ unreserved_keyword:
 			| SEARCH
 			| SECOND_P
 			| SECURITY
+			| SEMI
 			| SEQUENCE
 			| SEQUENCES
 			| SERIALIZABLE
@@ -18104,8 +18108,7 @@ col_name_keyword:
  * - thomas 2000-11-28
  */
 type_func_name_keyword:
-			  ANTI
-			| AUTHORIZATION
+			  AUTHORIZATION
 			| BINARY
 			| COLLATION
 			| CONCURRENTLY
@@ -18125,7 +18128,6 @@ type_func_name_keyword:
 			| OUTER_P
 			| OVERLAPS
 			| RIGHT
-			| SEMI
 			| SIMILAR
 			| TABLESAMPLE
 			| VERBOSE

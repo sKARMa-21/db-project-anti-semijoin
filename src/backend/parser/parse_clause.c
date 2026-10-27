@@ -1191,7 +1191,8 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 		 * Notice that we don't require the merged namespace list to be
 		 * conflict-free.  See the comments for scanNameSpaceForRefname().
 		 */
-		lateral_ok = (j->jointype == JOIN_INNER || j->jointype == JOIN_LEFT);
+		lateral_ok = (j->jointype == JOIN_INNER || j->jointype == JOIN_LEFT ||
+					  j->jointype == JOIN_SEMI || j->jointype == JOIN_ANTI);
 		setNamespaceLateralState(l_namespace, true, lateral_ok);
 
 		sv_namespace_length = list_length(pstate->p_namespace);
@@ -1426,7 +1427,8 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 		 * addRangeTableEntryForJoin before we have all the data computed, but
 		 * this seems less ugly.)
 		 */
-		is_semi_anti = (j->jointype == JOIN_SEMI || j->jointype == JOIN_ANTI);
+		is_semi_anti = (j->jointype == JOIN_SEMI || j->jointype == JOIN_ANTI ||
+						j->jointype == JOIN_RIGHT_SEMI || j->jointype == JOIN_RIGHT_ANTI);
 		j->rtindex = list_length(pstate->p_rtable) + 1;
 
 		switch (j->jointype)
@@ -1442,6 +1444,12 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 				break;
 			case JOIN_RIGHT:
 				markRelsAsNulledBy(pstate, j->larg, j->rtindex);
+				break;
+			case JOIN_SEMI:
+			case JOIN_ANTI:
+			case JOIN_RIGHT_SEMI:
+			case JOIN_RIGHT_ANTI:
+				/* semi/anti joins do not null-extend either side */
 				break;
 			default:
 				/* shouldn't see any other types here */
@@ -1755,6 +1763,11 @@ buildMergedJoinVar(ParseState *pstate, JoinType jointype,
 		case JOIN_SEMI:
 		case JOIN_ANTI:
 			res_node = l_node;
+			break;
+		case JOIN_RIGHT_SEMI:
+		case JOIN_RIGHT_ANTI:
+			/* output columns come from the right (surviving) side */
+			res_node = r_node;
 			break;
 		default:
 			elog(ERROR, "unrecognized join type: %d", (int) jointype);

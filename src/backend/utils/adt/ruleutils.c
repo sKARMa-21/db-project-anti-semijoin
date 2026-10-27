@@ -12606,6 +12606,30 @@ get_from_clause_item(Node *jtnode, Query *query, deparse_context *context)
 									 PRETTYINDENT_STD,
 									 PRETTYINDENT_JOIN);
 				break;
+			case JOIN_SEMI:
+				appendContextKeyword(context, " LEFT SEMI JOIN ",
+									 -PRETTYINDENT_STD,
+									 PRETTYINDENT_STD,
+									 PRETTYINDENT_JOIN);
+				break;
+			case JOIN_ANTI:
+				appendContextKeyword(context, " LEFT ANTI JOIN ",
+									 -PRETTYINDENT_STD,
+									 PRETTYINDENT_STD,
+									 PRETTYINDENT_JOIN);
+				break;
+			case JOIN_RIGHT_SEMI:
+				appendContextKeyword(context, " RIGHT SEMI JOIN ",
+									 -PRETTYINDENT_STD,
+									 PRETTYINDENT_STD,
+									 PRETTYINDENT_JOIN);
+				break;
+			case JOIN_RIGHT_ANTI:
+				appendContextKeyword(context, " RIGHT ANTI JOIN ",
+									 -PRETTYINDENT_STD,
+									 PRETTYINDENT_STD,
+									 PRETTYINDENT_JOIN);
+				break;
 			default:
 				elog(ERROR, "unrecognized join type: %d",
 					 (int) j->jointype);
