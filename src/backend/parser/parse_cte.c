@@ -1174,6 +1174,23 @@ checkWellFormedRecursionWalker(Node *node, CteState *cstate)
 				checkWellFormedRecursionWalker(j->rarg, cstate);
 				checkWellFormedRecursionWalker(j->quals, cstate);
 				break;
+			case JOIN_SEMI:
+			case JOIN_ANTI:
+
+				/*
+				 * For SEMI and ANTI joins, recursion is OK on the left side
+				 * (which produces output rows), but not on the right side
+				 * (which is only probed for existence/absence of matches).
+				 * Treat the right side the same as the nullable side of a
+				 * LEFT JOIN.
+				 */
+				checkWellFormedRecursionWalker(j->larg, cstate);
+				if (save_context == RECURSION_OK)
+					cstate->context = RECURSION_OUTERJOIN;
+				checkWellFormedRecursionWalker(j->rarg, cstate);
+				cstate->context = save_context;
+				checkWellFormedRecursionWalker(j->quals, cstate);
+				break;
 			default:
 				elog(ERROR, "unrecognized join type: %d",
 					 (int) j->jointype);

@@ -1215,6 +1215,11 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 
 		/*
 		 * Generate combined namespace info for possible use below.
+		 * For SEMI and ANTI joins, the right-side tables must NOT be
+		 * visible to the rest of the query: only A's rows are returned,
+		 * so references to B's columns should be errors.  We still need
+		 * r_namespace locally (to process the ON clause), but we exclude
+		 * it from the output namespace that is returned to higher levels.
 		 */
 		my_namespace = list_concat(l_namespace, r_namespace);
 
@@ -1603,12 +1608,31 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 		 * are still visible as table names, but are not visible for
 		 * unqualified column-name access.
 		 *
+		 * For SEMI and ANTI joins: only the left side is part of the output.
+		 * Strip the right-side entries from what we return upward, so that
+		 * outer queries cannot reference B's columns at all.
+		 *
 		 * Note: if there are nested alias-less JOINs, the lower-level ones
 		 * will remain in the list although they have neither p_rel_visible
 		 * nor p_cols_visible set.  We could delete such list items, but it's
 		 * unclear that it's worth expending cycles to do so.
 		 */
-		if (j->alias != NULL)
+		if (is_semi_anti)
+		{
+			/*
+			 * For SEMI/ANTI, the output logically contains only the left side.
+			 * Hide right-side entries from the returned namespace so outer
+			 * queries get an error if they reference B's columns or tables.
+			 */
+			setNamespaceColumnVisibility(r_namespace, false);
+			setNamespaceLateralState(r_namespace, false, false);
+			/* Return only the left-side namespace upward */
+			if (j->alias != NULL)
+				my_namespace = NIL;
+			else
+				setNamespaceColumnVisibility(l_namespace, false);
+		}
+		else if (j->alias != NULL)
 			my_namespace = NIL;
 		else
 			setNamespaceColumnVisibility(my_namespace, false);
@@ -1616,9 +1640,11 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 		/*
 		 * The join RTE itself is always made visible for unqualified column
 		 * names.  It's visible as a relation name only if it has an alias.
+		 * For SEMI/ANTI joins, cols_visible is false because the join RTE
+		 * does not expose merged columns — only the left side is output.
 		 */
 		nsitem->p_rel_visible = (j->alias != NULL);
-		nsitem->p_cols_visible = true;
+		nsitem->p_cols_visible = !is_semi_anti;
 		nsitem->p_lateral_only = false;
 		nsitem->p_lateral_ok = true;
 

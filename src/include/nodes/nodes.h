@@ -302,13 +302,15 @@ typedef enum JoinType
 	JOIN_RIGHT,					/* pairs + unmatched RHS tuples */
 
 	/*
-	 * Semijoins and anti-semijoins (as defined in relational theory) do not
-	 * appear in the SQL JOIN syntax, but there are standard idioms for
-	 * representing them (e.g., using EXISTS).  The planner recognizes these
-	 * cases and converts them to joins.  So the planner and executor must
-	 * support these codes.  NOTE: in JOIN_SEMI output, it is unspecified
-	 * which matching RHS row is joined to.  In JOIN_ANTI output, the row is
-	 * guaranteed to be null-extended.
+	 * Semijoins and anti-semijoins (as defined in relational theory).
+	 * These can appear in parser output as explicit SQL syntax
+	 * ("T SEMI JOIN S ON cond" and "T ANTI JOIN S ON cond"), in addition
+	 * to being generated internally by the planner from EXISTS/NOT EXISTS
+	 * subqueries.  Only JOIN_SEMI and JOIN_ANTI may appear in JoinExpr
+	 * nodes produced by the parser.  The RHS (S) columns are not visible
+	 * to the rest of the query in either case.
+	 * NOTE: in JOIN_SEMI output, it is unspecified which matching RHS row
+	 * is joined to.  In JOIN_ANTI output, the row is null-extended.
 	 */
 	JOIN_SEMI,					/* 1 copy of each LHS row that has match(es) */
 	JOIN_ANTI,					/* 1 copy of each LHS row that has no match */
