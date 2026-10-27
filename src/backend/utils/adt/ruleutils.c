@@ -12607,25 +12607,13 @@ get_from_clause_item(Node *jtnode, Query *query, deparse_context *context)
 									 PRETTYINDENT_JOIN);
 				break;
 			case JOIN_SEMI:
-				appendContextKeyword(context, " LEFT SEMI JOIN ",
+				appendContextKeyword(context, " SEMI JOIN ",
 									 -PRETTYINDENT_STD,
 									 PRETTYINDENT_STD,
 									 PRETTYINDENT_JOIN);
 				break;
 			case JOIN_ANTI:
-				appendContextKeyword(context, " LEFT ANTI JOIN ",
-									 -PRETTYINDENT_STD,
-									 PRETTYINDENT_STD,
-									 PRETTYINDENT_JOIN);
-				break;
-			case JOIN_RIGHT_SEMI:
-				appendContextKeyword(context, " RIGHT SEMI JOIN ",
-									 -PRETTYINDENT_STD,
-									 PRETTYINDENT_STD,
-									 PRETTYINDENT_JOIN);
-				break;
-			case JOIN_RIGHT_ANTI:
-				appendContextKeyword(context, " RIGHT ANTI JOIN ",
+				appendContextKeyword(context, " ANTI JOIN ",
 									 -PRETTYINDENT_STD,
 									 PRETTYINDENT_STD,
 									 PRETTYINDENT_JOIN);

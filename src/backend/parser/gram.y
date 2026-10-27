@@ -13887,12 +13887,10 @@ func_alias_clause:
 
 join_type:	FULL opt_outer							{ $$ = JOIN_FULL; }
 			| LEFT opt_outer						{ $$ = JOIN_LEFT; }
-			| LEFT SEMI								{ $$ = JOIN_SEMI; }
-			| LEFT ANTI								{ $$ = JOIN_ANTI; }
 			| RIGHT opt_outer						{ $$ = JOIN_RIGHT; }
-			| RIGHT SEMI							{ $$ = JOIN_RIGHT_SEMI; }
-			| RIGHT ANTI							{ $$ = JOIN_RIGHT_ANTI; }
 			| INNER_P								{ $$ = JOIN_INNER; }
+			| SEMI									{ $$ = JOIN_SEMI; }
+			| ANTI									{ $$ = JOIN_ANTI; }
 		;
 
 /* OUTER is just noise... */

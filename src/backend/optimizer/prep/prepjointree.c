@@ -614,17 +614,6 @@ pull_up_sublinks_jointree_recurse(PlannerInfo *root, Node *jtnode,
 														 leftrelids,
 														 NULL, NULL);
 				break;
-			case JOIN_SEMI:
-			case JOIN_ANTI:
-			case JOIN_RIGHT_SEMI:
-			case JOIN_RIGHT_ANTI:
-				/* explicit semi/anti joins from parser: treat quals same as inner */
-				j->quals = pull_up_sublinks_qual_recurse(root, j->quals,
-														 &jtlink,
-														 bms_union(leftrelids,
-																   rightrelids),
-														 NULL, NULL);
-				break;
 			default:
 				elog(ERROR, "unrecognized join type: %d",
 					 (int) j->jointype);
@@ -1273,8 +1262,6 @@ pull_up_subqueries_recurse(PlannerInfo *root, Node *jtnode,
 													 NULL);
 				break;
 			case JOIN_RIGHT:
-			case JOIN_RIGHT_SEMI:
-			case JOIN_RIGHT_ANTI:
 				j->larg = pull_up_subqueries_recurse(root, j->larg,
 													 j,
 													 NULL);
@@ -3449,12 +3436,12 @@ reduce_outer_joins_pass2(Node *jtnode,
 				break;
 			case JOIN_SEMI:
 			case JOIN_ANTI:
-			case JOIN_RIGHT_SEMI:
-			case JOIN_RIGHT_ANTI:
 
 				/*
-				 * Semi/anti joins do not null-extend either side, so upper
-				 * quals cannot be pushed into them.  No simplification needed.
+				 * These could only have been introduced by pull_up_sublinks,
+				 * so there's no way that upper quals could refer to their
+				 * righthand sides, and no point in checking.  We don't expect
+				 * to see JOIN_RIGHT_SEMI or JOIN_RIGHT_ANTI yet.
 				 */
 				break;
 			default:
@@ -4047,8 +4034,6 @@ remove_useless_results_recurse(PlannerInfo *root, Node *jtnode,
 				break;
 			case JOIN_FULL:
 			case JOIN_ANTI:
-			case JOIN_RIGHT_SEMI:
-			case JOIN_RIGHT_ANTI:
 				/* We have no special smarts for these cases */
 				break;
 			default:
@@ -4591,12 +4576,6 @@ get_nullingrels_recurse(Node *jtnode, Relids upper_nullingrels,
 				local_nullingrels = bms_add_member(bms_copy(upper_nullingrels),
 												   j->rtindex);
 				get_nullingrels_recurse(j->larg, local_nullingrels, info);
-				get_nullingrels_recurse(j->rarg, upper_nullingrels, info);
-				break;
-			case JOIN_RIGHT_SEMI:
-			case JOIN_RIGHT_ANTI:
-				/* Right semi/anti: right side survives, left side is probed only */
-				get_nullingrels_recurse(j->larg, upper_nullingrels, info);
 				get_nullingrels_recurse(j->rarg, upper_nullingrels, info);
 				break;
 			default:

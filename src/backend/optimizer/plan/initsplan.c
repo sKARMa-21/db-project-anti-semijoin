@@ -1376,8 +1376,6 @@ deconstruct_recurse(PlannerInfo *root, Node *jtnode,
 				jtitem->nonnullable_rels = left_item->qualscope;
 				break;
 			case JOIN_SEMI:
-			case JOIN_RIGHT_SEMI:
-			case JOIN_RIGHT_ANTI:
 				/* This node belongs to parent_domain, as do its children */
 				jtitem->jdomain = parent_domain;
 				/* Recurse */
@@ -1400,7 +1398,7 @@ deconstruct_recurse(PlannerInfo *root, Node *jtnode,
 													right_item->inner_join_rels);
 				jtitem->left_rels = left_item->qualscope;
 				jtitem->right_rels = right_item->qualscope;
-				/* Semi/right-semi/right-anti join adds no restrictions for quals */
+				/* Semi join adds no restrictions for quals */
 				jtitem->nonnullable_rels = NULL;
 				break;
 			case JOIN_FULL:
