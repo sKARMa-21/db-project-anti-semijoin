@@ -13889,6 +13889,8 @@ join_type:	FULL opt_outer							{ $$ = JOIN_FULL; }
 			| LEFT opt_outer						{ $$ = JOIN_LEFT; }
 			| RIGHT opt_outer						{ $$ = JOIN_RIGHT; }
 			| INNER_P								{ $$ = JOIN_INNER; }
+			| SEMI             						{ $$ = JOIN_SEMI; }
+            | ANTI            						{ $$ = JOIN_ANTI; }
 		;
 
 /* OUTER is just noise... */
@@ -18102,7 +18104,8 @@ col_name_keyword:
  * - thomas 2000-11-28
  */
 type_func_name_keyword:
-			  AUTHORIZATION
+			  ANTI
+			| AUTHORIZATION
 			| BINARY
 			| COLLATION
 			| CONCURRENTLY
@@ -18122,6 +18125,7 @@ type_func_name_keyword:
 			| OUTER_P
 			| OVERLAPS
 			| RIGHT
+			| SEMI
 			| SIMILAR
 			| TABLESAMPLE
 			| VERBOSE
@@ -18240,6 +18244,7 @@ bare_label_keyword:
 			| ANALYSE
 			| ANALYZE
 			| AND
+			| ANTI
 			| ANY
 			| ASC
 			| ASENSITIVE
@@ -18571,6 +18576,7 @@ bare_label_keyword:
 			| SEARCH
 			| SECURITY
 			| SELECT
+			| SEMI
 			| SEQUENCE
 			| SEQUENCES
 			| SERIALIZABLE

@@ -1169,6 +1169,7 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 		bool		lateral_ok;
 		int			sv_namespace_length;
 		int			k;
+		bool        is_semi_anti;
 
 		/*
 		 * Recursively process the left subtree, then the right.  We must do
@@ -1425,6 +1426,7 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 		 * addRangeTableEntryForJoin before we have all the data computed, but
 		 * this seems less ugly.)
 		 */
+		is_semi_anti = (j->jointype == JOIN_SEMI || j->jointype == JOIN_ANTI);
 		j->rtindex = list_length(pstate->p_rtable) + 1;
 
 		switch (j->jointype)
@@ -1750,6 +1752,10 @@ buildMergedJoinVar(ParseState *pstate, JoinType jointype,
 				res_node = (Node *) c;
 				break;
 			}
+		case JOIN_SEMI:
+		case JOIN_ANTI:
+			res_node = l_node;
+			break;
 		default:
 			elog(ERROR, "unrecognized join type: %d", (int) jointype);
 			res_node = NULL;	/* keep compiler quiet */
