@@ -1607,8 +1607,6 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 			 * For SEMI/ANTI, the output logically contains only the left side.
 			 * Hide right-side entries from the returned namespace so outer
 			 * queries get an error if they reference B's columns or tables.
-			 *
-			 *
 			 */
 			setNamespaceColumnVisibility(r_namespace, false);
 			setNamespaceLateralState(r_namespace, false, false);
