@@ -1215,11 +1215,6 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 
 		/*
 		 * Generate combined namespace info for possible use below.
-		 * For SEMI and ANTI joins, the right-side tables must NOT be
-		 * visible to the rest of the query: only A's rows are returned,
-		 * so references to B's columns should be errors.  We still need
-		 * r_namespace locally (to process the ON clause), but we exclude
-		 * it from the output namespace that is returned to higher levels.
 		 */
 		my_namespace = list_concat(l_namespace, r_namespace);
 
@@ -1607,10 +1602,6 @@ transformFromClauseItem(ParseState *pstate, Node *n,
 		 * hides the contained RTEs completely; otherwise, the contained RTEs
 		 * are still visible as table names, but are not visible for
 		 * unqualified column-name access.
-		 *
-		 * For SEMI and ANTI joins: only the left side is part of the output.
-		 * Strip the right-side entries from what we return upward, so that
-		 * outer queries cannot reference B's columns at all.
 		 *
 		 * Note: if there are nested alias-less JOINs, the lower-level ones
 		 * will remain in the list although they have neither p_rel_visible
